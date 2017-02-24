@@ -7,7 +7,7 @@ class FirebaseValue<T> extends BaseValue<T> {
     super()
   }
 
-  private onValue (snap) {
+  private onValue = (snap: firebase.database.DataSnapshot) => {
     let value
     if (snap) {
       value = snap.val()
