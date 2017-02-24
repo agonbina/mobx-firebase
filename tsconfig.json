@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "es2015",
+    "target": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -12,7 +12,6 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
-    "allowJs": true,
     "removeComments": true
   }
 }

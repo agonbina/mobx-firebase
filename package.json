@@ -2,8 +2,12 @@
   "name": "mobx-firebase",
   "version": "0.0.3",
   "description": "Mobx bindings to firebase references",
-  "main": "index.ts",
-  "scripts": {},
+  "main": "build/index.js",
+  "scripts": {
+    "prebuild": "rm -r build",
+    "build": "tsc --declaration --rootDir src --outDir build",
+    "prepublish": "npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/agonbina/mobx-firebase.git"
