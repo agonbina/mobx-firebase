@@ -14,6 +14,10 @@ abstract class BaseValue<T> {
     this.atom = new Atom('Firebase', this.onObserve.bind(this), this.onUnobserve.bind(this))
   }
 
+  getCurrent () {
+    return this._current
+  }
+
   setCurrent = (value: T, loading: boolean = false) => {
     this._current = value
     this._loading = loading
