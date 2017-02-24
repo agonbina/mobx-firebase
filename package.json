@@ -1,0 +1,23 @@
+{
+  "name": "mobx-firebase",
+  "version": "0.0.1",
+  "description": "Mobx bindings to firebase references",
+  "main": "index.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agonbina/mobx-firebase.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agonbina/mobx-firebase/issues"
+  },
+  "homepage": "https://github.com/agonbina/mobx-firebase#readme",
+  "devDependencies": {
+    "typescript": "^2.2.1"
+  },
+  "peerDependencies": {
+    "firebase": "^3.6.10",
+    "mobx": "^3.1.0"
+  }
+}
