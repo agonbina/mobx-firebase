@@ -5,7 +5,6 @@ abstract class BaseValue<T> {
   abstract onObserve (): void
   abstract onUnobserve(): void
 
-  private _loading: boolean = false
   private _error?: Error
   private _current: T
   private atom: Atom
@@ -18,28 +17,14 @@ abstract class BaseValue<T> {
     return this._current
   }
 
-  setCurrent = (value: T, loading: boolean = false) => {
+  setCurrent = (value: T) => {
     this._current = value
-    this._loading = loading
-    this.atom.reportChanged()
-  }
-
-  setLoading = (loading: boolean) => {
-    this._loading = loading
     this.atom.reportChanged()
   }
 
   setError = (error) => {
     this._error = error
-    this._loading = false
     this.atom.reportChanged()
-  }
-
-  loading () {
-    if (this.atom.reportObserved()) {
-      return this._loading
-    }
-    return this._loading
   }
 
   hasError () {

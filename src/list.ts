@@ -55,7 +55,7 @@ class FirebaseList<T> extends BaseValue<Array<T>> {
   }
 
   onObserve () {
-    this.setCurrent([], true)
+    this.setCurrent([])
     this.ref.on('child_added', this.onAdd, this.onError)
     this.ref.on('child_removed', this.onRemove, this.onError)
     this.ref.on('child_changed', this.onChange, this.onError)

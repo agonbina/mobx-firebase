@@ -16,7 +16,6 @@ class FirebaseValue<T> extends BaseValue<T> {
   }
 
   onObserve () {
-    this.setLoading(true)
     this.ref.on('value', this.onValue, error => this.setError(error))
   }
 
