@@ -5,7 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "prebuild": "rm -r build",
-    "build": "tsc --declaration --rootDir src --outDir build",
+    "build": "tsc -p src/tsconfig.json --rootDir src --outDir build",
+    "postbuild": "dts-generator --name mobx-firebase  --out index.d.ts --project src --main mobx-firebase",
     "prepublish": "npm run build"
   },
   "repository": {
