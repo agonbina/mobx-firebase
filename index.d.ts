@@ -52,6 +52,6 @@ declare module 'mobx-firebase/index' {
 
 }
 declare module 'mobx-firebase' {
-	import main = require('mobx-firebase');
+	import main = require('mobx-firebase/index');
 	export = main;
 }
