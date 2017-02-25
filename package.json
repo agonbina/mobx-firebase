@@ -1,6 +1,6 @@
 {
   "name": "mobx-firebase",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Mobx bindings to firebase references",
   "main": "build/index.js",
   "scripts": {
